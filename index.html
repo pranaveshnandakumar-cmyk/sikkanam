@@ -402,7 +402,7 @@ footer strong{color:#fff}
   <div class="container planner-wrapper">
     <div class="planner-header">
       <h2>Plan Your Tamil Nadu Trip</h2>
-      <p>Fill in the details — we'll handle the rest. No booking required.</p>
+      <p>Fill in the details — we'll handle the rest.</p>
     </div>
 
     <div class="planner-form">
@@ -557,7 +557,7 @@ footer strong{color:#fff}
     <div style="margin-bottom:48px">
       <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--saffron);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px">How it works</div>
       <h2 style="font-family:'Syne',sans-serif;font-size:34px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:10px">Four steps. Full plan.</h2>
-      <p style="color:var(--slate400);font-size:15px;max-width:480px">No booking required. No sign-up. Just enter your details and get a complete Tamil Nadu trip plan in seconds.</p>
+      <p style="color:var(--slate400);font-size:15px;max-width:480px"> No sign-up. Just enter your details and get a complete Tamil Nadu trip plan in seconds.</p>
     </div>
     <div class="how-grid">
       <div class="how-step" data-step="1">
@@ -607,6 +607,25 @@ footer strong{color:#fff}
       <p style="font-size:12px;color:rgba(255,255,255,.3);font-family:'DM Mono',monospace">© 2025 Sikkanam · All rights reserved</p>
     </div>
   </div>
+      <div style="margin-top:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:20px 24px">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px">📞 Contact & Queries</div>
+        <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:36px;height:36px;background:var(--saffron);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">📧</div>
+            <div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-family:'DM Mono',monospace;margin-bottom:2px">Email</div>
+              <a href="mailto:sikkanam_customerfeedback@gmail.com" style="font-size:13px;font-weight:600;color:#fff;text-decoration:none">sikkanam_customerfeedback@gmail.com</a>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:36px;height:36px;background:#25D366;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">📱</div>
+            <div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-family:'DM Mono',monospace;margin-bottom:2px">WhatsApp</div>
+              <a href="https://wa.me/916374161918" target="_blank" style="font-size:14px;font-weight:700;color:#25D366;text-decoration:none">+91 63741 61918</a>
+            </div>
+          </div>
+        </div>
+      </div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -1246,8 +1265,11 @@ const TN_DESTINATIONS = {
     name:"Kanchipuram", fullName:"Kanchipuram (Temple City of 1000 Temples)", cat:"temple", emoji:"🧵",
     bg:"linear-gradient(135deg,#fdf2f8,#f9a8d4)",
     district:"Kanchipuram",
-    hasRailway:true, nearestStation:"Kanchipuram",
-    nearestStationDist:0,
+    hasRailway:false, nearestStation:"Chengalpattu",
+    nearestStationDist:70,
+    stationToDest:"TNSTC Bus from Chengalpattu Bus Stand (1.5h · ₹50) · every 30 min",
+    stationToDestCost:{ bus:50 },
+    connectivityNote:"🚌 Best reached by bus — TNSTC runs every 15 min from Chennai Koyambedu (1.5h · ₹50). From other cities, take bus to Chennai then connect. No practical direct train from most cities.",
     desc:"City of 1000 temples and world-famous Kanchipuram silk sarees. One of India's 7 Sapta Moksha Puri cities.",
     attractions:["Ekambareswarar Temple 🛕","Kailasanathar Temple 🛕","Kamakshi Amman Temple 🛕","Varadharaja Perumal Temple 🛕","Vaikunta Perumal Temple 🛕","Silk Weaving Centres 🧵","Sri Shankaracharya Mutt 🕌","Ulagalandha Perumal Temple 🛕"],
     hotels:{
@@ -1271,11 +1293,7 @@ const TN_DESTINATIONS = {
     perDayCosts:{ budget:{food:180,entry:60,local:80}, standard:{food:350,entry:100,local:150}, comfort:{food:600,entry:100,local:250} },
     bestMonths:["Oct","Nov","Dec","Jan","Feb"],
     avoidMonths:["May","Jun"],
-    trainFromSources:{
-      "Chennai":{to:"Kanchipuram",price:{sleeper:50,ac:120},time:"1.5h",service:"EMU Local / MEMU"},
-      "Trichy":{to:"Kanchipuram",price:{sleeper:220,ac:550},time:"5h",service:"Express"},
-      "Madurai":{to:"Kanchipuram",price:{sleeper:300,ac:750},time:"8h",service:"Express"},
-    }
+    trainFromSources:{}
   },
 
   "Chidambaram": {
@@ -2506,8 +2524,8 @@ function quickPlan(destName) {
 // ════════════════════════════════════════════════════════
 const CONFIG = {
   API_URL: 'https://sikkanam.onrender.com/plan-trip', // POST endpoint
-  USE_LOCAL_ENGINE: false,      // false = call real API at API_URL
-  LOADING_DELAY_MS: 1200,       // simulated delay (only used in local mode)
+  USE_LOCAL_ENGINE: true ,      // false = call real API at API_URL
+  LOADING_DELAY_MS: 600,       // simulated delay (only used in local mode)
 };
 
 // ════════════════════════════════════════════════════════
@@ -2774,7 +2792,13 @@ const generatePlan = planTrip;
 
 function computePlan(src, dest, days, travellers, style, budgetPerPerson) {
   const D = TN_DESTINATIONS[dest];
-  if(!D) throw new Error('Destination not found');
+  if(!D) throw new Error(`Destination "${dest}" not found. Please select a different destination.`);
+  if(D.hasRailway===false && !D.stationToDest)    D.stationToDest    = `Bus/Auto from ${D.nearestStation||'nearest town'}`;
+  if(D.hasRailway===false && !D.stationToDestCost) D.stationToDestCost = {bus:50};
+  if(!D.perDayCosts)    D.perDayCosts    = {budget:{food:200,entry:100,local:100},standard:{food:350,entry:150,local:150},comfort:{food:600,entry:200,local:250}};
+  if(!D.localTransport) D.localTransport = {dayRate:150};
+  if(!D.trainFromSources) D.trainFromSources = {};
+  if(!D.hotels) D.hotels = {budget:[],standard:[],comfort:[]};
   const srcD = TN_DESTINATIONS[src] || null;
 
   // ── SMART ROUTE: compare direct bus vs train, pick cheaper ──
@@ -2839,7 +2863,7 @@ function generateItinerary(dest, days, D, style) {
       activities.push({time:'06:00',name:'Depart from home city (Train/Bus)',cost:'Included in transport'});
       activities.push({time:'10:00',name:`Arrive ${D.hasRailway ? dest : D.nearestStation}`,cost:'—'});
       if(!D.hasRailway) {
-        activities.push({time:'11:00',name:`${D.stationToDest.split('(')[0].trim()} to ${dest}`,cost:`₹${D.stationToDestCost[Object.keys(D.stationToDestCost)[0]]}`});
+        activities.push({time:'11:00',name:`${(D.stationToDest||'Bus/Auto').split('(')[0].trim()} to ${dest}`,cost:`₹${D.stationToDestCost[Object.keys(D.stationToDestCost)[0]]}`});
       }
       activities.push({time:'13:00',name:'Check-in & Lunch',cost:`₹${D.perDayCosts[style]?.food || 200}`});
       dayAttrs.slice(0,2).forEach((a,i)=>{

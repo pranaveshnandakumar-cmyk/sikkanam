@@ -1,25 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sikkanam - Tamil Nadu Budget Travel Planner</title>
-
+<title>Sikkanam — Tamil Nadu Budget Travel Planner</title>
 <meta name="description" content="Plan your Tamil Nadu trip on any budget. Smart route optimizer, hotels, day-by-day itinerary — for every destination across Tamil Nadu.">
-
-<!-- ✅ OPEN GRAPH TAGS -->
-<meta property="og:title" content="Sikkanam — Tamil Nadu Budget Travel Planner">
-<meta property="og:description" content="Plan your Tamil Nadu trip on any budget. Smart route optimizer, hotels, itinerary — all in one place.">
-<meta property="og:url" content="https://pranaveshnandakumar-cmyk.github.io/sikkanam/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://pranaveshnandakumar-cmyk.github.io/sikkanam/preview.png">
-
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -364,7 +351,7 @@ footer strong{color:#fff}
       <h1 class="hero-title">Travel Smart.<br>Spend <span>Sikkanam.</span></h1>
       <p class="hero-desc">Enter your budget — get a complete trip plan. Optimal route (bus or train), hotels filtered to your budget, tourist attractions, and a day-by-day itinerary. Covering all of Tamil Nadu.</p>
       <div class="hero-stats">
-        <div class="stat"><span class="stat-num">39+</span><span class="stat-label">Destinations</span></div>
+        <div class="stat"><span class="stat-num">41+</span><span class="stat-label">Destinations</span></div>
         <div class="stat"><span class="stat-num">Free</span><span class="stat-label">Always</span></div>
         <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Offline</span></div>
       </div>
@@ -450,7 +437,6 @@ footer strong{color:#fff}
               <option value="Dhanushkodi">Dhanushkodi</option>
               <option value="Velankanni">Velankanni</option>
               <option value="Tranquebar">Tranquebar (Tharangambadi)</option>
-              <option value="Covelong">Covelong (Kovalam Beach)</option>
               <option value="Marakkanam">Marakkanam</option>
             </optgroup>
             <optgroup label="🏛️ Temples & Heritage">
@@ -481,7 +467,6 @@ footer strong{color:#fff}
               <option value="Thoothukudi">Thoothukudi (Tuticorin)</option>
               <option value="Dindigul">Dindigul (Biryani City)</option>
               <option value="Erode">Erode (Turmeric City)</option>
-              <option value="Villupuram">Villupuram</option>
               <option value="Cuddalore">Cuddalore</option>
             </optgroup>
           </select>
@@ -627,7 +612,7 @@ footer strong{color:#fff}
             <div style="width:36px;height:36px;background:var(--saffron);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">📧</div>
             <div>
               <div style="font-size:11px;color:rgba(255,255,255,.4);font-family:'DM Mono',monospace;margin-bottom:2px">Email</div>
-              <a href="mailto:sikkanam_customerfeedback@gmail.com" style="font-size:13px;font-weight:600;color:#fff;text-decoration:none">sikkanam_customerfeedback@gmail.com</a>
+              <a href="mailto:sikkanam.customerfeedback@gmail.com" style="font-size:13px;font-weight:600;color:#fff;text-decoration:none">sikkanam.customerfeedback@gmail.com</a>
             </div>
           </div>
           <div style="display:flex;align-items:center;gap:12px">
@@ -1116,17 +1101,17 @@ const TN_DESTINATIONS = {
     name:"Pondicherry", fullName:"Pondicherry (Puducherry)", cat:"beach", emoji:"🇫🇷",
     bg:"linear-gradient(135deg,#dbeafe,#60a5fa)",
     district:"Puducherry UT",
-    hasRailway:false, nearestStation:"Villupuram",
-    nearestStationDist:38, stationToDest:"SETC/TNSTC Bus from Villupuram (1h · ₹40)",
-    connectivityNote:"✅ Very good connectivity. SETC/TNSTC buses from Villupuram Bus Stand (500m from Villupuram Jn) to Pondicherry every 15–20 min. Also: direct SETC bus from Chennai Koyambedu to Pondi every 20 min (₹150, 3h) — often better than train.",
+    hasRailway:true, nearestStation:"Puducherry",
+    nearestStationDist:0, stationToDest:"Arrive at Puducherry station or take direct SETC/TNSTC bus",
+    connectivityNote:"Very good connectivity. Direct SETC/TNSTC buses from Chennai Koyambedu to Pondicherry run frequently. Train and bus options both work well depending on your starting city.",
     stationToDestCost:{ bus:40, train:20 },
     busSchedule:{
-      from:"Villupuram Bus Stand (500m from station)",
-      operator:"SETC / TNSTC Villupuram",
+      from:"Chennai Koyambedu / Puducherry Bus Stand",
+      operator:"SETC / TNSTC",
       timings:["Every 15–20 minutes from 05:00 to 22:00"],
       duration:"1h",
       fare:40,
-      note:"Very frequent. Also direct SETC AC Volvo from Chennai Koyambedu every 20 min (₹150). Last bus Pondi→Villupuram at 22:30."
+      note:"Very frequent buses on the Chennai-Pondicherry corridor."
     },
     desc:"Former French colony. White Town, cafes, Promenade beach, Auroville. Best 2-day trip from Chennai. 3 hours away.",
     attractions:["Promenade Beach 🌊","French Quarter (White Town) 🏛️","Auroville (Matrimandir) 🌐","Aurobindo Ashram 🧘","Rock Beach 🌅","Chunnambar Backwaters 🚣","Botanical Garden 🌸","Basilica of Sacred Heart ⛪","Paradise Beach (Boat) 🏖️","Scuba Diving (Temple Adventures) 🤿"],
@@ -1157,10 +1142,10 @@ const TN_DESTINATIONS = {
     bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"],
     avoidMonths:["May","Jun"],
     trainFromSources:{
-      "Chennai":{to:"Villupuram",price:{sleeper:120,ac:300},time:"2.5h",service:"Express"},
-      "Madurai":{to:"Villupuram",price:{sleeper:200,ac:500},time:"4h",service:"Express"},
-      "Trichy":{to:"Villupuram",price:{sleeper:160,ac:400},time:"3.5h",service:"Express"},
-      "Salem":{to:"Villupuram",price:{sleeper:150,ac:370},time:"3h",service:"Express"},
+      "Chennai":{to:"Puducherry",price:{sleeper:120,ac:300},time:"2.5h",service:"Express"},
+      "Madurai":{to:"Puducherry",price:{sleeper:200,ac:500},time:"4h",service:"Express"},
+      "Trichy":{to:"Puducherry",price:{sleeper:160,ac:400},time:"3.5h",service:"Express"},
+      "Salem":{to:"Puducherry",price:{sleeper:150,ac:370},time:"3h",service:"Express"},
     }
   },
 
@@ -1462,8 +1447,8 @@ const TN_DESTINATIONS = {
     name:"Tiruvanamalai", fullName:"Tiruvannamalai (Sacred Fire Mountain)", cat:"temple", emoji:"🔥",
     bg:"linear-gradient(135deg,#fef3c7,#f97316)",
     district:"Tiruvannamalai",
-    hasRailway:false, nearestStation:"Tiruvannamalai (narrow gauge) or Viluppuram",
-    nearestStationDist:45, stationToDest:"Bus from Villupuram (1.5h) · ₹35",
+    hasRailway:true, nearestStation:"Tiruvannamalai",
+    nearestStationDist:0, stationToDest:"Arrive at Tiruvannamalai station or use direct TNSTC bus",
     stationToDestCost:{ bus:35 },
     desc:"Annamalaiyar Temple + Arunachala Hill. Deepam festival (Nov/Dec) draws millions. Spiritual vortex of South India.",
     attractions:["Annamalaiyar Temple 🛕","Arunachala Hill (14km trek) 🏔️","Ramana Maharshi Ashram 🧘","Sri Ramanasramam 🕉️","Skandashram Cave 🪨","Virupaksha Cave 🧘","Giri Valam (Hill Circumambulation) 🚶"],
@@ -1486,8 +1471,8 @@ const TN_DESTINATIONS = {
     bestMonths:["Nov","Dec","Jan","Feb"],
     avoidMonths:["May","Jun"],
     trainFromSources:{
-      "Chennai":{to:"Villupuram",price:{sleeper:120,ac:300},time:"2.5h",service:"Express"},
-      "Salem":{to:"Villupuram",price:{sleeper:150,ac:380},time:"3h",service:"Express"},
+      "Chennai":{to:"Tiruvannamalai",price:{sleeper:120,ac:300},time:"2.5h",service:"Express"},
+      "Salem":{to:"Tiruvannamalai",price:{sleeper:150,ac:380},time:"3h",service:"Express"},
     }
   },
 
@@ -2051,35 +2036,6 @@ const TN_DESTINATIONS = {
     }
   },
 
-  "Villupuram": {
-    name:"Villupuram", fullName:"Villupuram (Junction City · Gateway to Pondi)", cat:"city", emoji:"🚉",
-    bg:"linear-gradient(135deg,#f0fdf4,#4ade80)",
-    district:"Villupuram",
-    hasRailway:true, nearestStation:"Villupuram Junction",
-    nearestStationDist:0,
-    desc:"Major railway junction. Gateway to Pondicherry (38km), Gingee Fort (35km), Mahabalipuram. Important branching point for South TN trains.",
-    attractions:["Gingee Fort (35km) 🏰","Pondicherry (38km) 🌊","Vikravandi (nearby) 🌿","Tirukovilur Murugan Temple 🛕","Melmaruvathur Adiparasakthi 🛕","Vikravandi Waterfalls 💦","Sathanur Dam (40km) 💧"],
-    hotels:{
-      budget:[{name:"Hotel Arunachala",price:400,dist:"Near Junction",rating:3.5},{name:"Hotel RR",price:500,dist:"Town",rating:3.6}],
-      standard:[{name:"Hotel Karthik",price:1200,dist:"Town centre",rating:3.9}],
-      comfort:[{name:"OYO Rooms",price:2000,dist:"Near junction",rating:3.9}]
-    },
-    tips:["🏰 Gingee Fort — one of the strongest forts in India (35km) — half day trip","🚌 Pondicherry bus every 15 min from here (₹40, 1h)","🚂 All South TN trains pass through Villupuram — good connection point","💧 Sathanur Dam — reservoir + crocodile park"],
-    food:[
-      {name:"Railway Station Canteen",type:"South Indian",price:"₹40–₹100"},
-      {name:"Local Dhabas",type:"Budget TN",price:"₹50–₹120"},
-    ],
-    localTransport:{name:"Auto/Bus",dayRate:150},
-    perDayCosts:{ budget:{food:150,entry:50,local:80}, standard:{food:280,entry:100,local:150}, comfort:{food:550,entry:100,local:250} },
-    bestMonths:["Oct","Nov","Dec","Jan","Feb"],
-    avoidMonths:["May","Jun"],
-    trainFromSources:{
-      "Chennai":{to:"Villupuram Junction",price:{sleeper:130,ac:330},time:"2.5h",service:"Express"},
-      "Madurai":{to:"Villupuram Junction",price:{sleeper:220,ac:550},time:"5h",service:"Express"},
-      "Trichy":{to:"Villupuram Junction",price:{sleeper:160,ac:400},time:"3.5h",service:"Express"},
-    }
-  },
-
   // ── MORE CITIES ───────────────────────────────────────
   "Velankanni": {
     name:"Velankanni", fullName:"Velankanni (Shrine Basilica · Lourdes of the East)", cat:"temple", emoji:"⛪",
@@ -2144,37 +2100,204 @@ const TN_DESTINATIONS = {
     }
   },
 
-  "Covelong": {
-    name:"Covelong", fullName:"Covelong (Kovalam Beach — Chennai)", cat:"beach", emoji:"🏄",
-    bg:"linear-gradient(135deg,#dbeafe,#38bdf8)",
-    district:"Chengalpattu",
-    hasRailway:false, nearestStation:"Chengalpattu",
-    nearestStationDist:20, stationToDest:"Bus (40min) · ₹25 or ECR taxi",
-    stationToDestCost:{ bus:25, taxi:500 },
-    desc:"Surfing hub of South India. Clean beach, surf school, backpacker vibe. 40km from Chennai — easiest beach escape.",
-    attractions:["Surfing (Mumu School) 🏄","Fishing Village 🐟","Kovalam Beach 🏖️","Fort St. David (Cuddalore side) 🏯","Mahabalipuram (20km) 🏛️","ECR Drive 🚗","Muttukkadu Boathouse (nearby) 🚣"],
-    hotels:{
-      budget:[
-        {name:"Temple Surf Club (Dorm)",price:400,dist:"Beachfront",rating:4.0},
-        {name:"La Mer Guest House",price:700,dist:"200m from beach",rating:3.9},
-      ],
-      standard:[
-        {name:"Chariot Beach Resort",price:2500,dist:"Beachfront",rating:4.2},
-      ],
-      comfort:[{name:"Radisson Blu ECR",price:7500,dist:"Private beach",rating:4.5}]
-    },
-    tips:["🏄 Mumu Surf School — ₹1,500 for 2hr beginner lesson (totally worth it)","🌊 Best waves: Nov–Mar","🚌 Bus from Chennai CMBT to Kovalam ₹25 — super easy day trip","📸 Fishing village at sunrise is gorgeous","🎣 Buy fresh catch directly from fishermen at 6am"],
-    food:[{name:"Covelong Point Café",type:"Beach Café",price:"₹150–₹350"},{name:"Surfer's Shack",type:"Multi-cuisine",price:"₹120–₹280"}],
-    localTransport:{name:"Walk/Cycle",dayRate:150},
-    perDayCosts:{ budget:{food:200,entry:200,local:80}, standard:{food:400,entry:300,local:130}, comfort:{food:800,entry:300,local:200} },
-    bestMonths:["Nov","Dec","Jan","Feb","Mar"],
-    avoidMonths:["Jun","Jul"],
+};
+
+Object.assign(TN_DESTINATIONS, {
+  "Thirunallar": {
+    name:"Thirunallar", fullName:"Thirunallar (Saneeswarar Temple)", cat:"temple", emoji:"\uD83D\uDED5",
+    bg:"linear-gradient(135deg,#fff7ed,#f97316)",
+    district:"Karaikal",
+    hasRailway:true, nearestStation:"Thirunallar Road / Karaikal",
+    nearestStationDist:6,
+    stationToDest:"Best by bus from Karaikal, or train to Mayiladuthurai Junction and bus via Karaikal",
+    connectivityNote:"Thirunallar has rail access, but buses are usually easier. Best route: reach Karaikal by bus/train, then take a local bus or auto to Thirunallar. From Chennai or Trichy side, Mayiladuthurai Junction is a useful rail hub.",
+    stationToDestCost:{ bus:20, auto:150 },
+    busSchedule:{from:"Karaikal Bus Stand",operator:"TNSTC / Local Bus",timings:["06:00","07:00","08:00","09:00","10:00","11:00","12:00","14:00","16:00","18:00"],duration:"20-30min",fare:20,note:"Frequent local buses and autos from Karaikal"},
+    desc:"Famous Saneeswarar temple town near Karaikal. Best for a short temple trip with Mayiladuthurai or Karaikal as the rail/bus base.",
+    attractions:["Dharbaranyeswarar Saneeswarar Temple","Karaikal Beach","Karaikal Ammaiyar Temple","Mayiladuthurai temple belt","Nagore Dargah nearby"],
+    hotels:{budget:[{name:"Karaikal Budget Lodge",price:600,dist:"Karaikal town",rating:3.6},{name:"Temple Stay Rooms",price:500,dist:"Near temple",rating:3.5}],standard:[{name:"Hotel Nandha",price:1400,dist:"Karaikal",rating:3.9}],comfort:[{name:"Karaikal Comfort Inn",price:2800,dist:"Town centre",rating:4.1}]},
+    tips:["Bus from Karaikal is the easiest last mile","Saturday temple crowd is heavy, start early","Mayiladuthurai Junction is a practical rail hub for this belt","Keep Karaikal as stay base if rooms near temple are full"],
+    food:[{name:"Karaikal Veg Mess",type:"South Indian",price:"Rs.60-Rs.150"},{name:"Temple Street Tiffin",type:"Tiffin",price:"Rs.40-Rs.100"}],
+    localTransport:{name:"Bus/Auto",dayRate:200},
+    perDayCosts:{ budget:{food:160,entry:30,local:80}, standard:{food:300,entry:60,local:150}, comfort:{food:600,entry:60,local:250} },
+    bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"], avoidMonths:["May","Jun"],
     trainFromSources:{
-      "Chennai":{to:"Chengalpattu",price:{sleeper:40,ac:100},time:"1h",service:"EMU Local / MEMU"},
-      "Madurai":{to:"Chengalpattu",price:{sleeper:240,ac:600},time:"5.5h",service:"Express"},
+      "Chennai":{to:"Mayiladuthurai Junction",price:{sleeper:220,ac:550},time:"5.5h",service:"Express",busFromStation:"Bus to Karaikal/Thirunallar, 1.5-2h"},
+      "Trichy":{to:"Mayiladuthurai Junction",price:{sleeper:100,ac:250},time:"2.5h",service:"Express",busFromStation:"Bus via Karaikal"},
+      "Thanjavur":{to:"Mayiladuthurai Junction",price:{sleeper:70,ac:180},time:"1.5h",service:"Passenger / Express"},
+      "Kumbakonam":{to:"Mayiladuthurai Junction",price:{sleeper:40,ac:100},time:"45min",service:"Passenger / Express"},
+      "Mayiladuthurai":{to:"Mayiladuthurai Junction",price:{sleeper:20,ac:50},time:"local",service:"Local"}
     }
   },
-};
+
+  "Pillayarpatti": {
+    name:"Pillayarpatti", fullName:"Pillayarpatti (Karpaga Vinayagar Temple)", cat:"temple", emoji:"\uD83D\uDED5",
+    bg:"linear-gradient(135deg,#fef3c7,#d97706)",
+    district:"Sivaganga",
+    hasRailway:false, nearestStation:"Karaikudi Junction",
+    nearestStationDist:12,
+    stationToDest:"Reach Karaikudi Junction by train, then bus to Pillayarpatti",
+    connectivityNote:"Best route: train to Karaikudi Junction, then TNSTC/local bus or auto to Pillayarpatti Karpaga Vinayagar Temple.",
+    stationToDestCost:{ bus:25, auto:250 },
+    busSchedule:{from:"Karaikudi Bus Stand",operator:"TNSTC / Local Bus",timings:["06:00","07:00","08:00","09:00","10:00","12:00","14:00","16:00","18:00"],duration:"25-35min",fare:25,note:"Autos are easy from Karaikudi Junction/Bus Stand"},
+    desc:"Temple village famous for the ancient rock-cut Karpaga Vinayagar / Ganapathy Temple near Karaikudi.",
+    attractions:["Karpaga Vinayagar Temple","Karaikudi Chettinad mansions","Athangudi tiles village","Chettinad Palace area","Kundrakudi Murugan Temple"],
+    hotels:{budget:[{name:"Karaikudi Lodge",price:600,dist:"Near Karaikudi Jn",rating:3.6},{name:"Chettinad Budget Rooms",price:700,dist:"Karaikudi town",rating:3.7}],standard:[{name:"Hotel Subhalakshmi Palace",price:1600,dist:"Karaikudi",rating:4.0}],comfort:[{name:"Chettinad Heritage Stay",price:4200,dist:"Kanadukathan area",rating:4.4}]},
+    tips:["Stay at Karaikudi for better hotel choice","Temple visit combines well with Chettinad mansions","Try Chettinad meals in Karaikudi","Morning darshan is calmer than evening"],
+    food:[{name:"Karaikudi Chettinad Mess",type:"Chettinad meals",price:"Rs.100-Rs.250"},{name:"Temple Tiffin Stall",type:"Tiffin",price:"Rs.40-Rs.100"}],
+    localTransport:{name:"Bus/Auto",dayRate:250},
+    perDayCosts:{ budget:{food:180,entry:40,local:100}, standard:{food:350,entry:80,local:180}, comfort:{food:750,entry:100,local:300} },
+    bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"], avoidMonths:["May","Jun"],
+    trainFromSources:{
+      "Chennai":{to:"Karaikudi Junction",price:{sleeper:320,ac:800},time:"8h",service:"Express",busFromStation:"Bus/auto to Pillayarpatti, 12km"},
+      "Madurai":{to:"Karaikudi Junction",price:{sleeper:80,ac:200},time:"1.5h",service:"Passenger / Express"},
+      "Trichy":{to:"Karaikudi Junction",price:{sleeper:100,ac:250},time:"2h",service:"Passenger / Express"},
+      "Thanjavur":{to:"Karaikudi Junction",price:{sleeper:120,ac:300},time:"2.5h",service:"Express"}
+    }
+  },
+
+  "Mayiladuthurai": {
+    name:"Mayiladuthurai", fullName:"Mayiladuthurai (Temple Belt Hub)", cat:"temple", emoji:"\uD83D\uDED5",
+    bg:"linear-gradient(135deg,#ecfeff,#0891b2)",
+    district:"Mayiladuthurai",
+    hasRailway:true, nearestStation:"Mayiladuthurai Junction",
+    nearestStationDist:0,
+    desc:"Important Cauvery delta temple hub, useful for Thirunallar, Chidambaram, Kumbakonam, Vaitheeswaran Koil, Tharangambadi and nearby temple routes.",
+    attractions:["Mayuranathaswamy Temple","Vaitheeswaran Koil","Thirukadaiyur Temple","Kumbakonam temple belt","Thirunallar via Karaikal","Chidambaram day trip"],
+    hotels:{budget:[{name:"Mayiladuthurai Lodge",price:600,dist:"Near junction",rating:3.6},{name:"Temple Town Rooms",price:700,dist:"Town centre",rating:3.7}],standard:[{name:"Hotel Pams",price:1500,dist:"Town centre",rating:4.0}],comfort:[{name:"Cauvery Delta Comfort Stay",price:2800,dist:"Main road",rating:4.1}]},
+    tips:["Use Mayiladuthurai Junction as the rail base for many delta temples","Buses connect well to Karaikal, Thirunallar, Kumbakonam and Chidambaram","Plan temple clusters by direction to save time","Early morning is best for multi-temple days"],
+    food:[{name:"Delta Veg Meals",type:"South Indian meals",price:"Rs.70-Rs.160"},{name:"Station Tiffin Centre",type:"Tiffin",price:"Rs.40-Rs.100"}],
+    localTransport:{name:"Bus/Auto",dayRate:250},
+    perDayCosts:{ budget:{food:170,entry:50,local:100}, standard:{food:320,entry:100,local:180}, comfort:{food:650,entry:100,local:280} },
+    bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"], avoidMonths:["May","Jun"],
+    trainFromSources:{
+      "Chennai":{to:"Mayiladuthurai Junction",price:{sleeper:220,ac:550},time:"5.5h",service:"Express"},
+      "Trichy":{to:"Mayiladuthurai Junction",price:{sleeper:100,ac:250},time:"2.5h",service:"Express"},
+      "Thanjavur":{to:"Mayiladuthurai Junction",price:{sleeper:70,ac:180},time:"1.5h",service:"Passenger / Express"},
+      "Kumbakonam":{to:"Mayiladuthurai Junction",price:{sleeper:40,ac:100},time:"45min",service:"Passenger / Express"},
+      "Madurai":{to:"Mayiladuthurai Junction",price:{sleeper:220,ac:550},time:"5h",service:"Express"}
+    }
+  },
+
+  "Tiruchendur": {
+    name:"Tiruchendur", fullName:"Tiruchendur (Murugan Temple)", cat:"temple", emoji:"\uD83D\uDED5",
+    bg:"linear-gradient(135deg,#e0f2fe,#0284c7)",
+    district:"Thoothukudi",
+    hasRailway:true, nearestStation:"Tiruchendur",
+    nearestStationDist:0,
+    desc:"Sea-shore Murugan temple and one of the most visited Arupadai Veedu pilgrimage destinations.",
+    attractions:["Tiruchendur Murugan Temple","Temple sea shore","Nazhi Kinaru","Valli Cave","Thoothukudi day trip","Manapad beach nearby"],
+    hotels:{budget:[{name:"Temple Budget Lodge",price:600,dist:"Near temple",rating:3.6},{name:"Tiruchendur Pilgrim Rooms",price:700,dist:"Town centre",rating:3.7}],standard:[{name:"Hotel Chitra Park",price:1800,dist:"Near temple",rating:4.0}],comfort:[{name:"Sea View Comfort Stay",price:3200,dist:"Near beach",rating:4.2}]},
+    tips:["Very popular Murugan temple, weekends and festival days get crowded","Tiruchendur has railway station, but buses from Tirunelveli/Thoothukudi are also easy","Stay near temple if doing early morning darshan","Combine with Thoothukudi if you have extra time"],
+    food:[{name:"Temple Veg Mess",type:"South Indian",price:"Rs.60-Rs.150"},{name:"Sea Side Tiffin",type:"Tiffin",price:"Rs.40-Rs.120"}],
+    localTransport:{name:"Walk/Auto",dayRate:180},
+    perDayCosts:{ budget:{food:170,entry:40,local:80}, standard:{food:320,entry:80,local:150}, comfort:{food:650,entry:80,local:250} },
+    bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"], avoidMonths:["May","Jun"],
+    trainFromSources:{
+      "Chennai":{to:"Tiruchendur",price:{sleeper:400,ac:1000},time:"12h",service:"Express / connection"},
+      "Madurai":{to:"Tiruchendur",price:{sleeper:140,ac:350},time:"4h",service:"Express / passenger"},
+      "Tirunelveli":{to:"Tiruchendur",price:{sleeper:40,ac:100},time:"1.5h",service:"Passenger"},
+      "Thoothukudi":{to:"Tiruchendur",price:{sleeper:40,ac:100},time:"1h",service:"Passenger / Bus"},
+      "Trichy":{to:"Tiruchendur",price:{sleeper:250,ac:620},time:"7h",service:"Express / connection"}
+    }
+  },
+
+  "Tiruttani": {
+    name:"Tiruttani", fullName:"Tiruttani (Murugan Temple)", cat:"temple", emoji:"\uD83D\uDED5",
+    bg:"linear-gradient(135deg,#fefce8,#ca8a04)",
+    district:"Tiruvallur",
+    hasRailway:true, nearestStation:"Tiruttani",
+    nearestStationDist:0,
+    desc:"Famous Murugan temple town around 50-60km from Chennai Central, easily reached by rail via Arakkonam/Tiruttani.",
+    attractions:["Tiruttani Murugan Temple","Hill temple steps","Arakkonam rail hub","Nagari nearby","Chennai day trip"],
+    hotels:{budget:[{name:"Tiruttani Lodge",price:500,dist:"Near station",rating:3.5},{name:"Pilgrim Rooms",price:600,dist:"Near temple",rating:3.6}],standard:[{name:"Hotel Tamil Nadu Tiruttani",price:1300,dist:"Town centre",rating:3.9}],comfort:[{name:"Comfort Residency",price:2400,dist:"Main road",rating:4.0}]},
+    tips:["From Chennai Central, take suburban/express train towards Arakkonam/Tiruttani","Distance from Chennai Central is roughly 50-60km","Railway station is available, then auto/bus to temple base","Best as a one-day Murugan temple trip from Chennai"],
+    food:[{name:"Temple Street Tiffin",type:"South Indian",price:"Rs.40-Rs.120"},{name:"Tiruttani Veg Meals",type:"Meals",price:"Rs.70-Rs.160"}],
+    localTransport:{name:"Auto/Bus",dayRate:180},
+    perDayCosts:{ budget:{food:150,entry:30,local:80}, standard:{food:300,entry:60,local:140}, comfort:{food:600,entry:60,local:220} },
+    bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"], avoidMonths:["May","Jun"],
+    trainFromSources:{
+      "Chennai":{to:"Tiruttani",price:{sleeper:40,ac:100},time:"1.5-2h",service:"Suburban / Express via Arakkonam"},
+      "Vellore":{to:"Tiruttani",price:{sleeper:60,ac:150},time:"1.5h",service:"Passenger / Express"},
+      "Kanchipuram":{to:"Arakkonam Junction",price:{sleeper:40,ac:100},time:"1h",service:"Passenger",busFromStation:"Bus/train to Tiruttani"},
+      "Tiruvanamalai":{to:"Arakkonam Junction",price:{sleeper:100,ac:250},time:"3h",service:"Express / Passenger"}
+    }
+  },
+
+  "Palani": {
+    name:"Palani", fullName:"Palani (Murugan Temple)", cat:"temple", emoji:"\uD83D\uDED5",
+    bg:"linear-gradient(135deg,#f0fdf4,#16a34a)",
+    district:"Dindigul",
+    hasRailway:true, nearestStation:"Palani",
+    nearestStationDist:0,
+    desc:"Major Murugan temple town on the Dindigul-Palakkad railway route. The easiest approach is often bus from nearby Dindigul.",
+    attractions:["Palani Murugan Temple","Hill temple rope car","Winch train","Dindigul transit hub","Kodaikanal side trip"],
+    hotels:{budget:[{name:"Palani Pilgrim Lodge",price:500,dist:"Near temple",rating:3.6},{name:"Station Road Rooms",price:600,dist:"Near station",rating:3.6}],standard:[{name:"Hotel Subam",price:1500,dist:"Temple area",rating:4.0}],comfort:[{name:"Palani Comfort Stay",price:2800,dist:"Town centre",rating:4.1}]},
+    tips:["Palani has railway station on the Dindigul-Palakkad route","Bus from Dindigul is often the easiest and most frequent option","Use rope car/winch if avoiding the climb","Start early on festival days"],
+    food:[{name:"Temple Area Veg Meals",type:"South Indian",price:"Rs.60-Rs.150"},{name:"Palani Panchamirtham Shops",type:"Prasadam/Sweets",price:"Rs.50-Rs.250"}],
+    localTransport:{name:"Walk/Auto/Bus",dayRate:180},
+    perDayCosts:{ budget:{food:160,entry:50,local:80}, standard:{food:320,entry:100,local:150}, comfort:{food:650,entry:100,local:250} },
+    bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"], avoidMonths:["May","Jun"],
+    trainFromSources:{
+      "Chennai":{to:"Dindigul Junction",price:{sleeper:255,ac:640},time:"6.5h",service:"Express",busFromStation:"Bus to Palani, 1.5-2h"},
+      "Madurai":{to:"Dindigul Junction",price:{sleeper:60,ac:150},time:"1h",service:"Express",busFromStation:"Bus to Palani"},
+      "Coimbatore":{to:"Palani",price:{sleeper:100,ac:250},time:"2.5h",service:"Passenger / Express"},
+      "Dindigul":{to:"Palani",price:{sleeper:40,ac:100},time:"1.5h",service:"Passenger / Bus"},
+      "Trichy":{to:"Dindigul Junction",price:{sleeper:100,ac:250},time:"2h",service:"Express",busFromStation:"Bus to Palani"}
+    }
+  },
+
+  "Tenkasi": {
+    name:"Tenkasi", fullName:"Tenkasi (Courtallam Falls and Kasi Viswanathar)", cat:"temple", emoji:"\u26F2",
+    bg:"linear-gradient(135deg,#dcfce7,#0f766e)",
+    district:"Tenkasi",
+    hasRailway:true, nearestStation:"Tenkasi Junction",
+    nearestStationDist:0,
+    desc:"Main base for Courtallam Falls and Kasi Viswanathar Temple. Trains going towards Sengottai usually cross Tenkasi.",
+    attractions:["Courtallam Main Falls","Kasi Viswanathar Temple","Five Falls","Old Courtallam Falls","Sengottai route","Papanasam side trip"],
+    hotels:{budget:[{name:"Tenkasi Budget Lodge",price:600,dist:"Near junction",rating:3.6},{name:"Courtallam Rooms",price:800,dist:"Near falls",rating:3.7}],standard:[{name:"Hotel Kings Palace",price:1700,dist:"Tenkasi town",rating:4.0}],comfort:[{name:"Courtallam Resort Stay",price:3500,dist:"Falls area",rating:4.2}]},
+    tips:["Best way is by train to Tenkasi Junction","All trains going to Sengottai cross Tenkasi side","Courtallam season is best after monsoon flow starts","Use Tenkasi as base for Srivilliputhur and Sankarankoil belt trips"],
+    food:[{name:"Tenkasi Veg Meals",type:"South Indian",price:"Rs.70-Rs.160"},{name:"Courtallam Snack Stalls",type:"Snacks/Tiffin",price:"Rs.40-Rs.120"}],
+    localTransport:{name:"Bus/Auto",dayRate:250},
+    perDayCosts:{ budget:{food:180,entry:60,local:100}, standard:{food:350,entry:120,local:180}, comfort:{food:700,entry:150,local:300} },
+    bestMonths:["Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb"], avoidMonths:["Apr","May"],
+    trainFromSources:{
+      "Chennai":{to:"Tenkasi Junction",price:{sleeper:380,ac:950},time:"11h",service:"Express / Sengottai route"},
+      "Madurai":{to:"Tenkasi Junction",price:{sleeper:120,ac:300},time:"3h",service:"Express / Passenger"},
+      "Tirunelveli":{to:"Tenkasi Junction",price:{sleeper:50,ac:120},time:"1.5h",service:"Passenger / Express"},
+      "Trichy":{to:"Tenkasi Junction",price:{sleeper:250,ac:620},time:"6h",service:"Express"},
+      "Kanyakumari":{to:"Tenkasi Junction",price:{sleeper:120,ac:300},time:"3h",service:"Passenger / Express"}
+    }
+  },
+
+  "Sankarankoil": {
+    name:"Sankarankoil", fullName:"Sankarankoil (Sankaranarayanar Temple)", cat:"temple", emoji:"\uD83D\uDED5",
+    bg:"linear-gradient(135deg,#fdf2f8,#db2777)",
+    district:"Tenkasi",
+    hasRailway:true, nearestStation:"Sankarankovil",
+    nearestStationDist:0,
+    desc:"Temple town in the Tenkasi belt, famous for Sankaranarayanar Temple. Easy to combine with Tenkasi and Srivilliputhur.",
+    attractions:["Sankaranarayanar Temple","Tenkasi day trip","Srivilliputhur Andal Temple","Courtallam Falls","Rajapalayam belt"],
+    hotels:{budget:[{name:"Sankarankoil Lodge",price:500,dist:"Near temple",rating:3.5},{name:"Station Road Rooms",price:600,dist:"Near station",rating:3.6}],standard:[{name:"Temple Town Residency",price:1300,dist:"Town centre",rating:3.9}],comfort:[{name:"Tenkasi Comfort Stay",price:2600,dist:"Use Tenkasi base",rating:4.0}]},
+    tips:["Reach Tenkasi first, then bus/train to Sankarankoil","Famous for Sankaranarayanar Temple","Combine with Srivilliputhur for Andal temple and palkova","Tenkasi is the stronger stay base for this belt"],
+    food:[{name:"Sankarankoil Veg Mess",type:"South Indian",price:"Rs.60-Rs.150"},{name:"Local Sweet Stall",type:"Snacks",price:"Rs.30-Rs.100"}],
+    localTransport:{name:"Bus/Auto",dayRate:200},
+    perDayCosts:{ budget:{food:160,entry:40,local:90}, standard:{food:320,entry:80,local:160}, comfort:{food:650,entry:80,local:260} },
+    bestMonths:["Oct","Nov","Dec","Jan","Feb","Mar"], avoidMonths:["May","Jun"],
+    trainFromSources:{
+      "Chennai":{to:"Sankarankovil",price:{sleeper:380,ac:950},time:"10.5h",service:"Express / connection"},
+      "Tenkasi":{to:"Sankarankovil",price:{sleeper:40,ac:100},time:"1h",service:"Passenger / Bus"},
+      "Madurai":{to:"Sankarankovil",price:{sleeper:100,ac:250},time:"2.5h",service:"Passenger / Express"},
+      "Tirunelveli":{to:"Sankarankovil",price:{sleeper:60,ac:150},time:"1.5h",service:"Passenger / Bus"},
+      "Srivilliputhur":{to:"Sankarankovil",price:{sleeper:40,ac:100},time:"1h",service:"Passenger / Bus"}
+    }
+  }
+});
+
+if(TN_DESTINATIONS.Srivilliputhur) {
+  TN_DESTINATIONS.Srivilliputhur.attractions.push("Tenkasi belt trip", "Sankarankoil Sankaranarayanar Temple", "Srivilliputhur Palkova");
+  TN_DESTINATIONS.Srivilliputhur.tips.push("Reach Tenkasi as a base to cover Srivilliputhur and Sankarankoil together.");
+}
 
 // ════════════════════════════════════════════════════════
 //  DIRECT TNSTC/SETC BUS ROUTES
@@ -2193,10 +2316,10 @@ const DIRECT_BUS = {
   // Mahabalipuram connections
   "Mahabalipuram|Chennai":   {fare:50,  time:"1.5h", operator:"TNSTC", note:"Every 20 min"},
   "Mahabalipuram|Pondicherry":{fare:80, time:"2h",   operator:"TNSTC", note:"Several daily via ECR"},
-  "Mahabalipuram|Chidambaram":{fare:150,time:"3.5h", operator:"TNSTC", note:"Via Pondicherry/Villupuram"},
-  "Mahabalipuram|Kumbakonam":{fare:200, time:"5h",   operator:"TNSTC", note:"Via Villupuram–Thanjavur"},
-  "Mahabalipuram|Thanjavur": {fare:220, time:"5.5h", operator:"TNSTC", note:"Via Villupuram"},
-  "Mahabalipuram|Trichy":    {fare:250, time:"6h",   operator:"TNSTC", note:"Via Villupuram"},
+  "Mahabalipuram|Chidambaram":{fare:150,time:"3.5h", operator:"TNSTC", note:"Via Pondicherry"},
+  "Mahabalipuram|Kumbakonam":{fare:200, time:"5h",   operator:"TNSTC", note:"Via Thanjavur side"},
+  "Mahabalipuram|Thanjavur": {fare:220, time:"5.5h", operator:"TNSTC", note:"Several daily"},
+  "Mahabalipuram|Trichy":    {fare:250, time:"6h",   operator:"TNSTC", note:"Several daily"},
   "Mahabalipuram|Madurai":   {fare:300, time:"7h",   operator:"TNSTC/SETC", note:"Via Chennai or ECR"},
   "Mahabalipuram|Kanchipuram":{fare:60, time:"1.5h", operator:"TNSTC", note:"Via Chengalpattu"},
   "Mahabalipuram|Vellore":   {fare:150, time:"3h",   operator:"TNSTC", note:"Via Kanchipuram"},
@@ -2242,10 +2365,9 @@ const DIRECT_BUS = {
   "Kanyakumari|Chennai":     {fare:450, time:"11h",  operator:"SETC", note:"Overnight"},
   // Dhanushkodi
   "Dhanushkodi|Madurai":     {fare:150, time:"4.5h", operator:"TNSTC+Jeep", note:"Via Rameswaram"},
-  // Covelong/Marakkanam
-  "Covelong|Chennai":        {fare:25,  time:"1h",   operator:"TNSTC", note:"CMBT every 30 min"},
+  // Marakkanam
   "Marakkanam|Pondicherry":  {fare:30,  time:"45min",operator:"TNSTC", note:"Every 30 min"},
-  "Marakkanam|Chennai":      {fare:100, time:"2.5h", operator:"TNSTC", note:"Via Villupuram"},
+  "Marakkanam|Chennai":      {fare:100, time:"2.5h", operator:"TNSTC", note:"Via ECR/OMR side"},
   // Madurai connections
   "Madurai|Kodaikanal":      {fare:80,  time:"3h",   operator:"TNSTC", note:"Via Dindigul, several daily"},
   "Madurai|Dindigul":        {fare:40,  time:"1h",   operator:"TNSTC", note:"Very frequent"},
@@ -2292,6 +2414,29 @@ const DIRECT_BUS = {
   "Thanjavur|Chidambaram":   {fare:80,  time:"2h",   operator:"TNSTC", note:"Several daily"},
   "Thanjavur|Madurai":       {fare:100, time:"2.5h", operator:"TNSTC", note:"Several daily"},
 };
+
+Object.assign(DIRECT_BUS, {
+  "Karaikal|Thirunallar":       {fare:20,  time:"30min", operator:"TNSTC/Local", note:"Frequent local buses"},
+  "Mayiladuthurai|Thirunallar": {fare:70,  time:"1.5h",  operator:"TNSTC",       note:"Via Karaikal"},
+  "Kumbakonam|Mayiladuthurai":  {fare:40,  time:"45min", operator:"TNSTC",       note:"Very frequent"},
+  "Kumbakonam|Thirunallar":     {fare:90,  time:"2h",    operator:"TNSTC",       note:"Via Mayiladuthurai/Karaikal"},
+  "Karaikudi|Pillayarpatti":    {fare:25,  time:"30min", operator:"TNSTC/Local", note:"Frequent local buses"},
+  "Madurai|Pillayarpatti":      {fare:90,  time:"2h",    operator:"TNSTC",       note:"Via Karaikudi"},
+  "Trichy|Pillayarpatti":       {fare:110, time:"2.5h",  operator:"TNSTC",       note:"Via Karaikudi"},
+  "Tirunelveli|Tiruchendur":    {fare:60,  time:"1.5h",  operator:"TNSTC",       note:"Very frequent"},
+  "Thoothukudi|Tiruchendur":    {fare:40,  time:"1h",    operator:"TNSTC",       note:"Very frequent"},
+  "Madurai|Tiruchendur":        {fare:160, time:"4h",    operator:"TNSTC",       note:"Several daily"},
+  "Chennai|Tiruttani":          {fare:80,  time:"2h",    operator:"TNSTC/Train", note:"Train via Arakkonam is easiest"},
+  "Vellore|Tiruttani":          {fare:70,  time:"1.5h",  operator:"TNSTC",       note:"Several daily"},
+  "Dindigul|Palani":            {fare:60,  time:"1.5h",  operator:"TNSTC",       note:"Very frequent"},
+  "Madurai|Palani":             {fare:100, time:"2.5h",  operator:"TNSTC",       note:"Via Dindigul"},
+  "Coimbatore|Palani":          {fare:100, time:"2.5h",  operator:"TNSTC",       note:"Several daily"},
+  "Tirunelveli|Tenkasi":        {fare:50,  time:"1.5h",  operator:"TNSTC/Train", note:"Sengottai trains cross Tenkasi"},
+  "Madurai|Tenkasi":            {fare:120, time:"3h",    operator:"TNSTC/Train", note:"Several daily"},
+  "Tenkasi|Sankarankoil":       {fare:45,  time:"1h",    operator:"TNSTC/Train", note:"Easy belt connection"},
+  "Tenkasi|Srivilliputhur":     {fare:80,  time:"2h",    operator:"TNSTC/Train", note:"Use Tenkasi as base"},
+  "Srivilliputhur|Sankarankoil":{fare:50,  time:"1h",    operator:"TNSTC",       note:"Temple belt hop"}
+});
 
 // Helper: get direct bus if available (checks both directions)
 function getDirectBus(src, dest) {
